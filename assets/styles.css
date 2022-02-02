@@ -1,0 +1,94 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --main-cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/*Sätt box sizing på html, samt hur högt dokumentet ska vara. html är ju hela dokumentet*/
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Sedan på body, där kan man sätta bakgrundsfärgen, vilken font det ska vara, storlek på fonten, gärna rem*/
+
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  min-height: 100%;
+}
+
+/* sedan sätter man "*" med såna selectors, före och efter, alltså 3 stycken. box-sizing inherit? eller? sedan margin och padding*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nu sätter vi stilen på själva kortet. Bakgrunden, padding, border radius,skuggor, storlek och max-storlek, position?, left, top, samt transform? vad det nu var, glöm ej text align*/
+
+.card {
+  background-color: var(--Very-dark-blue-card-BG);
+  /*Ha rem här istället?*/
+  padding: 1rem 1rem 2.7rem 1rem;
+  border-radius: 1.25rem;
+  box-sizing: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /*Vad gör denna?*/
+  transform: translate(-50%, -50%);
+  width: 84%;
+  max-width: 20rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* text-align: center; */
+}
+
+/*Nu sätter vi stilen på image. width, radius,margin bottom för att komma ifrån texten lite? objectfit? behövs det?*/
+
+.container {
+  padding: 2px 16px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 1.25rem;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Lite stil för kort-titeln padding kanske?*/
+
+.card-body-title {
+  padding: 5px;
+  color: white;
+  font-weight: 300;
+  text-align: left;
+}
+
+/* Lite stil för text, padding här med kanske?*/
+
+.card-body-text {
+  padding: 5px;
+}
+
+.eth-value {
+  color: var(--main-cyan);
+  text-align: left;
+  margin-right: 80px;
+}
+
+.countdown {
+  color: var(--soft-blue);
+  text-align: end;
+}
+.attribution {
+}
