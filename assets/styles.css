@@ -83,7 +83,7 @@ body {
 .eth-value {
   color: var(--main-cyan);
   text-align: left;
-  margin-right: 80px;
+  margin-right: 50px;
 }
 
 .countdown {
@@ -91,4 +91,23 @@ body {
   text-align: end;
 }
 .attribution {
+}
+
+.img-section {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.avatar {
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.first-text {
+  color: var(--soft-blue);
+}
+
+.second-text {
+  color: var(--White);
 }
